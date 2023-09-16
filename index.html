@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autochange Slider</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .imgslider {
+            width: 80%;
+            height: 400px;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            transform: translate(-50% -50%);
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.7) url("image5.jpg");
+            background-blend-mode: darken;
+            background-size: 100% 100%;
+            animation: slider 10s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h3 {
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            font-family: arial;
+        }
+        
+        @keyframes slider {
+            0% {
+                background-image: url("image5.jpg");
+            }
+            25% {
+                background-image: url("image6.jpg");
+            }
+            50% {
+                background-image: url("image8.jpg");
+            }
+            100% {
+                background-image: url("image28.jpg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgslider">
+        <h3>Autochange Slider...</h3>
+    </div>
+
+
+
+</body>
+
+</html>
